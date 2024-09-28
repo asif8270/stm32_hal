@@ -1,0 +1,26 @@
+#include "stm32f4xx.h"
+
+//LED = PD13
+//BTN = PA0
+
+GPIO_InitTypeDef initGPIO;
+
+int main()
+{
+
+	while(1)
+	{
+
+	}
+}
+
+void init_gpio(void)
+{
+	/*Enable clock for the port D*/
+	__HAL_RCC_GPIOD_CLK_ENABLE();
+
+	/*Configure PD13 as the output*/
+	initGPIO.Mode = GPIO_MODE_OUTPUT_PP;
+	in
+
+}

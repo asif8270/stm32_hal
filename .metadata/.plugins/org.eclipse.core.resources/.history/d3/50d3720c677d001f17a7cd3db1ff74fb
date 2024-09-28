@@ -1,0 +1,13 @@
+#include "stm32f4xx.h"
+
+//LED = PD13
+//BTN = PA0
+
+int main()
+{
+
+	while(1)
+	{
+
+	}
+}

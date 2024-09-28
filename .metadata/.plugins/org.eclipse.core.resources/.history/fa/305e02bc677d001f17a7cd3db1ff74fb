@@ -1,0 +1,25 @@
+#include "stm32f4xx.h"
+
+#define GPIOAEN		(1U<<0)
+
+//LED = PD13
+//BTN = PA0
+
+GPIO_InitTypeDef initGPIO;
+
+int main()
+{
+
+	while(1)
+	{
+
+	}
+}
+
+void init_gpio(void)
+{
+	__HAL_RCC_GPIOA_CLK_ENABLE();
+	initGPIO.Mode = GPIO_MODE_OUTPUT_PP;
+	in
+
+}
