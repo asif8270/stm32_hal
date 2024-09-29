@@ -1,0 +1,28 @@
+#include "stm32f4xx.h"
+#include "i2c.h"
+
+#define GPIO_PORT 	GPIOB
+
+#define SCL_PIN 	GPIO_PIN_6
+#define SDA_PIN 	GPIO_PIN_7
+
+I2C_HandleTypeDef hi2c;
+
+
+
+uint8_t btnStatus;
+
+int main()
+{
+	HAL_Init();
+	gpio_init();
+
+	while(1)
+	{
+	}
+}
+
+void SysTick_Handler(void)
+{
+	HAL_IncTick();
+}

@@ -1,0 +1,45 @@
+#include "stm32f4xx.h"
+#include "i2c.h"
+
+#define I2C1_PORT 	GPIOB
+
+#define SCL_PIN 	GPIO_PIN_6
+#define SDA_PIN 	GPIO_PIN_7
+
+void gpio_init(void);
+
+uint8_t btnStatus;
+
+int main()
+{
+	HAL_Init();
+	gpio_init();
+
+	while(1)
+	{
+	}
+}
+
+
+void gpio_init(void)
+{
+	/*Enable clock for the port A*/
+	__HAL_RCC_GPIOB_CLK_ENABLE();
+
+	GPIO_InitTypeDef initGPIO = {0};
+
+	/*Configure PA0 as the input*/
+	initGPIO.Pin       = (SCL_PIN | SDA_PIN);
+	initGPIO.Mode      = GPIO_MODE_AF_OD;
+	initGPIO.Pin       = GPIO_PULLUP;
+	initGPIO.Speed     = GPIO_SPEED_FREQ_HIGH;
+	initGPIO.Alternate = GPIO_AF4_I2C1;
+
+	HAL_GPIO_Init(I2C1_PORT, &initGPIO);
+
+}
+
+void SysTick_Handler(void)
+{
+	HAL_IncTick();
+}

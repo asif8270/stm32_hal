@@ -1,10 +1,19 @@
-12:53:01 **** Incremental Build of configuration Debug for project 18_I2C_Driver ****
+12:54:05 **** Incremental Build of configuration Debug for project 18_I2C_Driver ****
 make -j4 all 
+arm-none-eabi-gcc "../Src/i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I"D:/stm32_hal/18_I2C_Driver/Drivers/CMSIS/Include" -I"D:/stm32_hal/18_I2C_Driver/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/stm32_hal/18_I2C_Driver/Drivers/STM32F4xx_HAL_Driver/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/i2c.d" -MT"Src/i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/i2c.o"
+arm-none-eabi-gcc "../Src/lis302dl.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I"D:/stm32_hal/18_I2C_Driver/Drivers/CMSIS/Include" -I"D:/stm32_hal/18_I2C_Driver/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/stm32_hal/18_I2C_Driver/Drivers/STM32F4xx_HAL_Driver/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/lis302dl.d" -MT"Src/lis302dl.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/lis302dl.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Inc -I"D:/stm32_hal/18_I2C_Driver/Drivers/CMSIS/Include" -I"D:/stm32_hal/18_I2C_Driver/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/stm32_hal/18_I2C_Driver/Drivers/STM32F4xx_HAL_Driver/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "18_I2C_Driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\stm32_hal\18_I2C_Driver\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="18_I2C_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 18_I2C_Driver.elf
+ 
 arm-none-eabi-size  18_I2C_Driver.elf 
+arm-none-eabi-objdump -h -S 18_I2C_Driver.elf  > "18_I2C_Driver.list"
    text	   data	    bss	    dec	    hex	filename
-   2268	     12	   1572	   3852	    f0c	18_I2C_Driver.elf
+   2272	     12	   1572	   3856	    f10	18_I2C_Driver.elf
 Finished building: default.size.stdout
  
+Finished building: 18_I2C_Driver.list
+ 
 
-12:53:01 Build Finished. 0 errors, 0 warnings. (took 318ms)
+12:54:06 Build Finished. 0 errors, 0 warnings. (took 1s.20ms)
 

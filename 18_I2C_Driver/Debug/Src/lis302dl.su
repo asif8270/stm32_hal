@@ -1,0 +1,3 @@
+../Src/lis302dl.c:13:6:lis302_write	32	static
+../Src/lis302dl.c:22:6:lis302_read_values	40	static
+../Src/lis302dl.c:28:6:lis302_read_address	40	static

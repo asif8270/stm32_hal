@@ -1,0 +1,18 @@
+#include "stm32f4xx.h"
+#include "i2c.h"
+#include "lis302dl.h"
+
+int main()
+{
+	HAL_Init();
+	gpio_init();
+
+	while(1)
+	{
+	}
+}
+
+void SysTick_Handler(void)
+{
+	HAL_IncTick();
+}

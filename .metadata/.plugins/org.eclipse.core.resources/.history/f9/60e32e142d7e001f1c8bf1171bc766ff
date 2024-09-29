@@ -1,0 +1,16 @@
+/*
+ * lis302dl.h
+ *
+ *  Created on: Sep 29, 2024
+ *      Author: Asif
+ */
+
+#include "stm32f4xx.h"
+#include "i2c.h"
+
+#ifndef LIS302DL_H_
+#define LIS302DL_H_
+
+
+
+#endif /* LIS302DL_H_ */

@@ -1,0 +1,21 @@
+#include "stm32f4xx.h"
+#include "i2c.h"
+
+
+
+uint8_t btnStatus;
+
+int main()
+{
+	HAL_Init();
+	gpio_init();
+
+	while(1)
+	{
+	}
+}
+
+void SysTick_Handler(void)
+{
+	HAL_IncTick();
+}

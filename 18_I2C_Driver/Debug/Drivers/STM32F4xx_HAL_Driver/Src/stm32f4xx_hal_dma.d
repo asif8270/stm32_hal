@@ -23,6 +23,8 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o: \
  D:/stm32_hal/18_I2C_Driver/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
  D:/stm32_hal/18_I2C_Driver/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
  D:/stm32_hal/18_I2C_Driver/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+ D:/stm32_hal/18_I2C_Driver/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h \
+ D:/stm32_hal/18_I2C_Driver/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h \
  D:/stm32_hal/18_I2C_Driver/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  D:/stm32_hal/18_I2C_Driver/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 D:/stm32_hal/18_I2C_Driver/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
@@ -48,5 +50,7 @@ D:/stm32_hal/18_I2C_Driver/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex
 D:/stm32_hal/18_I2C_Driver/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h:
 D:/stm32_hal/18_I2C_Driver/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h:
 D:/stm32_hal/18_I2C_Driver/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h:
+D:/stm32_hal/18_I2C_Driver/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h:
+D:/stm32_hal/18_I2C_Driver/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h:
 D:/stm32_hal/18_I2C_Driver/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h:
 D:/stm32_hal/18_I2C_Driver/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
